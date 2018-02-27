@@ -1,0 +1,34 @@
+{
+  "title": "465: Talent Acquisition Specialist, Human Resources",
+  "hiringManager": "Adam Battle",
+  "recruiter": "Frannie Recruiter",
+  "location": "Headquarters",
+  "status": "Open",
+  "openedOn": "2017-09-20T12:00:00.000Z",
+  "daysOpen": 110,
+  "daysOnHold": 0,
+  "daysClosed": 0,
+  "externalWorkflow": "US Standard Workflow",
+  "internalWorkflow": "US Standard Workflow",
+  "posting": {
+    "type": "INT/EXT",
+    "internalViews": 1,
+    "externalViews": 314
+  },
+  "positions": {
+    "open": 1,
+    "filled": 2,
+    "cancelled": 0
+  },
+  "candidates": {
+    "total": 25,
+    "new": 15,
+    "review": 5,
+    "screen": 0,
+    "interview": 2,
+    "offer":  0,
+    "hire": 1,
+    "board": 0,
+    "dq": 3
+  }
+}

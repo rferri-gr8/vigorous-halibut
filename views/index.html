@@ -1,0 +1,63 @@
+{% extends "layouts/app.html" %}
+
+{% block main %}
+<h1>
+  Hire Portal Prototype
+</h1>
+<nav>
+
+  <table>
+    <style scoped>
+      :root,
+      table {
+        table-layout: fixed;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        padding: 1em;
+      }
+      
+      th {
+        text-align: left;
+      }
+      
+      td {
+        text-align: center;
+      }
+      
+      td, th {
+        border: 1px solid #eee;
+      }
+      
+      th:first-child {
+        border-right: 3px solid #ddd;
+      }
+      
+      thead > tr > th {
+        border-bottom: 3px solid #ddd;
+      }
+    </style>
+    <thead>
+      <tr>
+        <th>Page</th>
+        <th>Current</th>
+        <th>Proposed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Job</th>
+        <td><a href="/job/current">view</a></td>
+        <td><a href="/job/proposed">view</a></td>
+      </tr>
+      <tr>
+        <th>Applicant</th>
+        <td><a href="/applicant/current">view</a></td>
+        <td><a href="/applicant/proposed">view</a></td>
+      </tr>
+    </tbody>
+  </table>
+  
+</nav>
+{% endblock %}

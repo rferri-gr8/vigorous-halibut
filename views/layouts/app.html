@@ -1,0 +1,84 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body class="app">
+    
+    <nav id="main-nav" class="app__nav main-nav">
+      <div class="main-nav__pills pills" role="menu">
+        <a class="pills__pill" role="menuitem" href="/" title="My Tasks">
+          <span class="pills__pill-text">
+            My Tasks
+          </span>
+        </a>
+
+        <a class="pills__pill" role="menuitem" href="/" title="Jobs">
+          <span class="pills__pill-text">
+            Jobs
+          </span>
+        </a>
+
+        <a class="pills__pill" role="menuitem" href="/" title="Analytics">
+          <span class="pills__pill-text">
+            Analytics
+          </span>
+        </a>
+      </div>
+
+      <div class="main-nav__user-menu">
+        <a id="user-menu-toggle" class="main-nav__avatar" href="#toggle-user-menu" data-toggle="dropdown" aria-expanded="false">
+          <img class="main-nav__avatar-image" src="https://placehold.it/30x30" alt="Harry Hiring Manager" data-profile-pic="" width="30" height="30">
+        </a>
+      </div>
+    </nav>
+    
+    <main class="app__main">
+      <article class="page">
+        <section class="page__rail">
+          {% block rail %}
+          rail
+          {% endblock %}
+        </section>
+
+        <section class="page__viewport">
+          <main class="page__toolbar toolbar">
+            {% block tbar %}
+            toolbar
+            {% endblock %}
+          </main>
+          
+          <main class="page__main">
+            {% block main %}
+            content
+            {% endblock %}
+          </main>
+        </section>
+      </article>
+    </main>
+    
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+    {% include "iconicsprite.svg" %}
+  </body>
+</html>
